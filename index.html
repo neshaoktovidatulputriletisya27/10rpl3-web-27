@@ -3,86 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Colorful Microsite</title>
-
+    <meta name="theme-color" content="#f7f8ff">
+    <meta name="description" content="Pintasan untuk formulir, hasil biodata, dan tabel kelas.">
+    <title>Ruang Kelas | 10 RPL 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-    <div class="container">
-
-        <!-- FOTO DAN NAMA -->
-        <div class="profile">
-
-            <img src="foto.jpg" alt="Foto Profil">
-
-            <h1>Nesha 🌈</h1>
-
-            <p>@neshaaa</p>
-
-            <p class="bio">
-                ✨ Pelajar yang suka belajar hal baru ✨
-            </p>
-
-        </div>
-
-
-        <!-- TOMBOL LINK -->
-        <div class="links">
-
-            <a href="#" class="link">
-                🌷 Tentang Saya
+<body class="home-page">
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="index.html" aria-label="Ruang Kelas, halaman utama">
+                <span class="brand-mark" aria-hidden="true">✿</span>
+                <span>ruang<span class="brand-accent">kelas</span></span>
             </a>
+            <p class="class-tag"><span class="class-dot"></span> KELAS 10 RPL 3</p>
+        </header>
 
-            <a href="#" class="link">
-                📚 Website Sekolah
-            </a>
+        <main>
+            <section class="welcome" aria-labelledby="welcome-title">
+                <div class="welcome-copy">
+                    <p class="eyebrow">welcome <span aria-hidden="true">✦</span></p>
+                    <h1 id="welcome-title">nesaa <br><span>Siap mulai?</span></h1>
+                    <p class="welcome-text">Semua yang kamu cari untuk kegiatan kelas ada di satu tempat.</p>
+                    <a class="welcome-button" href="#menu">Lihat menu <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="profile-visual">
+                    <div class="photo-accent" aria-hidden="true"></div>
+                    <img class="profile-photo" src="331837164.jpg" alt="Nesha in a black hijab and light blue top at an outdoor night event">
+                    <span class="photo-caption"><span aria-hidden="true">✿</span> little moments</span>
+                    <span class="photo-star" aria-hidden="true">✦</span>
+                </div>
+            </section>
 
-            <a href="#" class="link">
-                🎨 Portofolio Saya
-            </a>
+            <section class="menu-section" id="menu" aria-labelledby="menu-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">PINTASAN</p>
+                        <h2 id="menu-title">Pilih tujuanmu</h2>
+                    </div>
+                    <p class="section-note">Tiga langkah kecil, beres sudah <span aria-hidden="true">↘</span></p>
+                </div>
 
-            <a href="#" class="link">
-                💌 Kontak Saya
-            </a>
+                <nav class="menu-list" aria-label="Menu kelas">
+                    <a href="form_biodata.html" class="menu-item menu-peach">
+                        <span class="item-top"><span class="item-icon" aria-hidden="true">✎</span><span class="item-number">01</span></span>
+                        <span class="item-title">Form Biodata</span>
+                        <span class="item-detail">Isi data dirimu di sini</span>
+                        <span class="item-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a href="hasil_biodata.html" class="menu-item menu-lilac">
+                        <span class="item-top"><span class="item-icon" aria-hidden="true">♡</span><span class="item-number">02</span></span>
+                        <span class="item-title">Hasil Biodata</span>
+                        <span class="item-detail">Lihat rangkuman data siswa</span>
+                        <span class="item-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a href="table.html" class="menu-item menu-mint">
+                        <span class="item-top"><span class="item-icon" aria-hidden="true">▦</span><span class="item-number">03</span></span>
+                        <span class="item-title">Tabel Siswa</span>
+                        <span class="item-detail">Jelajahi data kelas</span>
+                        <span class="item-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </nav>
+            </section>
+        </main>
 
-        </div>
-
-
-        <!-- SOSIAL MEDIA -->
-        <h2>💖 Temukan Saya</h2>
-
-        <div class="social">
-
-            <a href="https://www.instagram.com/"
-               target="_blank"
-               class="instagram">
-                📷 Instagram
-            </a>
-
-            <a href="https://www.tiktok.com/"
-               target="_blank"
-               class="tiktok">
-                🎵 TikTok
-            </a>
-
-            <a href="https://www.facebook.com/"
-               target="_blank"
-               class="facebook">
-                💙 Facebook
-            </a>
-
-        </div>
-
-
-        <!-- FOOTER -->
-        <p class="footer">
-            Made with 💕 by Nesha
-        </p>
-
+        <footer class="page-footer">
+            <span>DIBUAT DENGAN <span class="footer-heart">♥</span> UNTUK 10 RPL 3</span>
+            <span>SEMANGAT BELAJAR! <span aria-hidden="true">✿</span></span>
+        </footer>
     </div>
-
 </body>
 </html>

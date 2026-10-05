@@ -1,226 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>  
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<!DOCTYPE html>
-<html> 
-<head>
-<style>
-table, th, td {
-  border: 1px solid rgb(19, 18, 18);
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-  text-align: left;
-}
-</style>
-</head>
-<body>
-
-<h2>DATA Biodata Siswa PPLG</h2>
-
-
-<table style="width:100%">
-
-  <tr>
-    <th>Field/Atribut</th>
-    <th>Keterangan / Hasil input</th>
-  </tr>
-  <tr>
-    <td>Nama</td>
-    <td>Muhammad Wildan Aufa </td>
-  </tr>
-  <tr>
-    <td>Alamat</td>
-    <td>Desa Bukit Kemuning Kec Tapung Hulu Kab Kampar</td>
-  </tr>
-   <tr>
-    <td>Jurusan</td>
-    <td>RPL</td>
-  </tr>
-  <tr>
-    <td>Jenis Kelamin</td>
-    <td>Laki Laki 
-    </td>
-  </tr>
-   <tr>
-    <td>Tinggi Badan (cm)</td>
-    <td>160</td>
-  </tr>
-  <tr>
-    <td>Berat Badan (kg)</td>
-    <td>57</td>
-  </tr>
-  <tr>
-    <td>Hobi</td>
-    <td>Mengaji </td>
-  </tr>
-    <tr>
-    <td>No.HP</td>
-    <td>087769684592</td>
-  </tr>
-</tr>
-     <th colspan="2">Status: Data berhasil divalidasi dan direkap ke dalam tabel.</th>
-</table>
-
-<hr>
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Siswa</title>
-
+    <title>Data Biodata Siswa</title>
     <style>
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 30px auto;
+        body {
+            margin: 24px;
+            font-family: Arial, sans-serif;
         }
 
-        th, td {
-            border: 1px solid black;
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #222;
             padding: 10px;
             text-align: left;
         }
 
         th {
             background-color: #d9eaf7;
-            text-align: center;
         }
 
-        h2 {
-            text-align: center;
+        .summary-table {
+            width: 100%;
         }
-    </style>
-</head>
 
-<body>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Siswa</title>
+        .summary-table th {
+            background-color: transparent;
+        }
 
-    <style>
-        table {
+        .summary-table .status {
+            text-align: center;
+            background-color: #eef6fb;
+        }
+
+        .student-table {
             width: 80%;
-            border-collapse: collapse;
             margin: 30px auto;
         }
 
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #d9eaf7;
+        .student-table th {
             text-align: center;
         }
 
-        h2 {
-            text-align: center;
+        .student-table .measurements {
+            width: 100%;
+            margin: 0;
+        }
+
+        .measurements td {
+            border: 0;
+        }
+
+        .measurements tr + tr td {
+            border-top: 1px solid #222;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 16px;
+            }
+
+            .student-table {
+                width: 100%;
+            }
+
+            th,
+            td {
+                padding: 7px;
+            }
         }
     </style>
 </head>
-
 <body>
-
-    <h2>Data Siswa</h2>
-
-    <table>
-        <!-- Judul Kolom -->
-        <tr>
-            <th>Kategori Data</th>
-            <th>Atribut Form</th>
-            <th>Hasil Isian Siswa</th>
-        </tr>
-
-        <!-- Identitas Pribadi - Merge 3 Baris -->
-        <tr>
-            <td rowspan="3">Identitas Pribadi</td>
-            <td>Nama:</td>
-            <td>Muhammmad Wildan Aufa </td>
-        </tr>
-
-        <tr>
-            <td>Alamat:</td>
-            <td>Kampar Tapung Hulu Bukit Kemining </td>
-        </tr>
-
-        <tr>
-            <td>No HP:</td>
-            <td>081217420464</td>
-        </tr>
-
-        <!-- Akademik - 1 Baris -->
-        <tr>
-            <td>Akademik</td>
-            <td>Jurusan:</td>
-            <td> RPL</td>
-        </tr>
-
-        <!-- Preferensi - 1 Baris -->
-        <tr>
-            <td>Preferensi</td>
-            <td>Hobi</td>
-            <td>Membaca</td>
-        </tr>
-
-       <!-- Pengukuran Badan -->
-<tr>
-    <td>Pengukuran Badan</td>
-    <td>Tinggi dan Berat Badan</td>
-    <td style="padding: 0;">
-        <table style="width: 100%; margin: 0; border-collapse: collapse;">
-            <tr>
-                <td style="border: none; border-bottom: 1px solid black;">
-                    Tinggi: 170 cm normal
-                </td>
-            </tr>
-            <tr>
-                <td style="border: none;">
-                    Berat: 60 kg
-                </td>
-            </tr>
+    <main>
+        <h1>DATA Biodata Siswa PPLG</h1>
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>Field/Atribut</th>
+                    <th>Keterangan / Hasil input</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nama</td>
+                    <td>Nesha Oktovidatul Putri Letisya</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>Desa Jambuwer Kec. Kromengan Kab. Malang</td>
+                </tr>
+                <tr>
+                    <td>Jurusan</td>
+                    <td>RPL</td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>Perempuan</td>
+                </tr>
+                <tr>
+                    <td>Tinggi Badan (cm)</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Berat Badan (kg)</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>Menyanyi</td>
+                </tr>
+                <tr>
+                    <td>No.HP</td>
+                    <td>081217420464</td>
+                </tr>
+                <tr>
+                    <th class="status" colspan="2">Status: Data berhasil divalidasi dan direkap ke dalam tabel.</th>
+                </tr>
+            </tbody>
         </table>
-    </td>
-</tr>
 
-        <!-- Lain-lain - 1 Baris -->
-        <tr>
-            <td>Lain-lain</td>
-            <td>Catatan</td>
-            <td>Tidak ada</td>
-        </tr>
+        <hr>
 
-    </table>
-    
-</body>
-</html>
+        <h2>Data Siswa</h2>
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th>Kategori Data</th>
+                    <th>Atribut Form</th>
+                    <th>Hasil Isian Siswa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Identitas Pribadi</td>
+                    <td>Nama:</td>
+                    <td>Nesha Oktovidatul Putri Letisya</td>
+                </tr>
+                <tr>
+                    <td>Alamat:</td>
+                    <td>Desa Jambuwer Kec. Kromengan Kab. Malang</td>
+                </tr>
+                <tr>
+                    <td>No HP:</td>
+                    <td>081217420464</td>
+                </tr>
+                <tr>
+                    <td>Akademik</td>
+                    <td>Jurusan:</td>
+                    <td>RPL</td>
+                </tr>
+                <tr>
+                    <td>Preferensi</td>
+                    <td>Hobi</td>
+                    <td>Menyanyi</td>
+                </tr>
+                <tr>
+                    <td>Pengukuran Badan</td>
+                    <td>Tinggi dan Berat Badan</td>
+                    <td class="measurement-cell">
+                        <table class="measurements">
+                            <tbody>
+                                <tr>
+                                    <td>Tinggi: 150 cm normal</td>
+                                </tr>
+                                <tr>
+                                    <td>Berat: 45 kg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lain-lain</td>
+                    <td>Catatan</td>
+                    <td>Tidak ada</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>
