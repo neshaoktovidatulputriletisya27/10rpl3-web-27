@@ -1,3 +1,7 @@
+/* =========================
+   DASAR
+========================= */
+
 * {
     box-sizing: border-box;
 }
@@ -8,65 +12,61 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background-color: #fff4d6;
+    /* Background warna-warni */
+    background-color: #ffd6e7;
 
-    color: #555;
-
-    min-height: 100vh;
-
-    position: relative;
-
-    overflow-x: hidden;
+    color: #444;
 }
 
 
-/* BACKGROUND */
+/* =========================
+   BACKGROUND HIASAN
+========================= */
 
-.lingkaran {
+body::before {
+    content: "";
+
     position: fixed;
 
+    width: 180px;
+    height: 180px;
+
+    background-color: #bde0fe;
+
     border-radius: 50%;
+
+    top: 30px;
+    left: 20px;
 
     z-index: -1;
 }
 
-.satu {
-    width: 300px;
-    height: 300px;
+body::after {
+    content: "";
 
-    background-color: #ffb6d5;
+    position: fixed;
 
-    top: -100px;
-    left: -100px;
-}
+    width: 220px;
+    height: 220px;
 
-.dua {
-    width: 350px;
-    height: 350px;
+    background-color: #caffbf;
 
-    background-color: #a8d8ff;
+    border-radius: 50%;
 
-    right: -150px;
-    top: 200px;
-}
+    bottom: 30px;
+    right: 20px;
 
-.tiga {
-    width: 300px;
-    height: 300px;
-
-    background-color: #b8f2c8;
-
-    left: -120px;
-    bottom: -100px;
+    z-index: -1;
 }
 
 
-/* CONTAINER */
+/* =========================
+   CONTAINER
+========================= */
 
 .container {
     width: 90%;
-
-    max-width: 800px;
+    max-width: 500px;
 
     margin: 40px auto;
 
@@ -74,279 +74,231 @@ body {
 }
 
 
-/* PROFIL */
+/* =========================
+   PROFILE
+========================= */
 
-.profil {
+.profile {
     background-color: white;
 
-    padding: 30px;
+    padding: 30px 20px;
 
-    border-radius: 25px;
+    border-radius: 30px;
 
-    box-shadow: 0 5px 20px #d8c5cc;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+    border: 4px solid #fff;
 }
 
-.foto {
-    width: 140px;
-    height: 140px;
+
+/* FOTO */
+
+.profile img {
+    width: 130px;
+    height: 130px;
 
     object-fit: cover;
 
     border-radius: 50%;
 
-    border: 6px solid white;
+    border: 6px solid #ffd166;
 
-    box-shadow: 0 5px 15px #cdb4bd;
-}
-
-.profil h1 {
-    color: #8e5aa8;
-
-    margin-bottom: 5px;
-}
-
-.profil p {
-    color: #888;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 
-/* BOX */
+/* NAMA */
 
-.box {
-    background-color: white;
+.profile h1 {
+    margin: 15px 0 5px;
 
+    color: #ff6b9a;
+
+    font-size: 30px;
+}
+
+
+/* USERNAME */
+
+.profile p {
+    margin: 8px;
+
+    color: #777;
+}
+
+
+/* BIO */
+
+.profile .bio {
+    color: #7b61ff;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   LINK
+========================= */
+
+.links {
     margin-top: 25px;
-
-    padding: 25px;
-
-    border-radius: 25px;
-
-    box-shadow: 0 5px 20px #d8c5cc;
-}
-
-.box h2 {
-    color: #8e5aa8;
-
-    margin-top: 0;
-
-    margin-bottom: 20px;
 }
 
 
-/* FORM */
-
-form {
-    text-align: left;
-}
-
-label {
+.link {
     display: block;
 
-    margin-top: 15px;
-
-    margin-bottom: 6px;
-
-    font-weight: bold;
-
-    color: #666;
-}
-
-input,
-select,
-textarea {
-    width: 100%;
-
-    padding: 12px;
-
-    border: 2px solid #f0c9d7;
-
-    border-radius: 10px;
-
-    font-size: 14px;
-
-    outline: none;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    border-color: #e88ca5;
-}
-
-textarea {
-    height: 90px;
-
-    resize: vertical;
-}
-
-
-/* BUTTON */
-
-button {
-    width: 100%;
-
-    margin-top: 25px;
-
-    padding: 14px;
-
-    border: none;
-
-    border-radius: 12px;
-
-    background-color: #e88ca5;
-
-    color: white;
-
-    font-size: 16px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #d96f8c;
-}
-
-
-/* HASIL BIODATA */
-
-.hasil-data {
-    background-color: #fff0f6;
-
-    padding: 20px;
-
-    border-radius: 15px;
-
-    text-align: left;
-}
-
-.hasil-data p {
-    margin: 10px 0;
-
-    line-height: 1.5;
-}
-
-.kosong {
-    color: #999;
-}
-
-
-/* TABLE */
-
-.table-container {
-    width: 100%;
-
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-
-    border-collapse: collapse;
-
-    font-size: 13px;
-}
-
-th {
-    background-color: #e88ca5;
-
-    color: white;
-
-    padding: 12px;
-}
-
-td {
-    padding: 10px;
-
-    border: 1px solid #f0c9d7;
-
-    background-color: #fffafd;
-}
-
-tr:nth-child(even) td {
-    background-color: #fff0f6;
-}
-
-
-/* SOSIAL MEDIA */
-
-.sosmed {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 12px;
-
-    flex-wrap: wrap;
-}
-
-.sosmed a {
     text-decoration: none;
 
     color: white;
 
-    padding: 12px 20px;
+    padding: 16px;
 
-    border-radius: 20px;
+    margin: 14px 0;
+
+    border-radius: 18px;
 
     font-weight: bold;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
 }
+
+
+/* WARNA LINK BERBEDA */
+
+.link:nth-child(1) {
+    background-color: #ff8fab;
+}
+
+.link:nth-child(2) {
+    background-color: #7b61ff;
+}
+
+.link:nth-child(3) {
+    background-color: #4cc9f0;
+}
+
+.link:nth-child(4) {
+    background-color: #80c904;
+}
+
+
+/* EFEK */
+
+.link:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   JUDUL SOSIAL MEDIA
+========================= */
+
+h2 {
+    margin-top: 35px;
+
+    color: #ff6b9a;
+
+    font-size: 22px;
+}
+
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+.social {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+.social a {
+    text-decoration: none;
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* INSTAGRAM */
 
 .instagram {
-    background-color: #e6689b;
+    background-color: #e1306c;
 }
+
+
+/* TIKTOK */
 
 .tiktok {
-    background-color: #222222;
-}
-
-.whatsapp {
-    background-color: #25d366;
-}
-
-.sosmed a:hover {
-    opacity: 0.8;
+    background-color: #222;
 }
 
 
-/* FOOTER */
+/* FACEBOOK */
+
+.facebook {
+    background-color: #1877f2;
+}
+
+
+/* HOVER */
+
+.social a:hover {
+    transform: translateY(-4px);
+
+    opacity: 0.85;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
-    margin: 25px 0;
+    margin-top: 30px;
 
-    color: #8e5aa8;
+    color: #777;
 
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
-/* RESPONSIVE */
+/* =========================
+   HP / MOBILE
+========================= */
 
 @media (max-width: 600px) {
 
     .container {
-        width: 95%;
+        width: 92%;
     }
 
-    .box {
-        padding: 18px;
+    .profile {
+        padding: 25px 15px;
     }
 
-    .profil {
-        padding: 20px;
+    .profile img {
+        width: 110px;
+        height: 110px;
     }
 
-    .foto {
-        width: 120px;
-        height: 120px;
-    }
-
-    .profil h1 {
+    .profile h1 {
         font-size: 26px;
     }
 
-    table {
-        font-size: 12px;
-    }
 }
