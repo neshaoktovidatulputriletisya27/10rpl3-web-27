@@ -1,0 +1,297 @@
+/* =========================
+   DASAR
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background-color: #fff4d6;
+
+    position: relative;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   BACKGROUND WARNA-WARNI
+========================= */
+
+.lingkaran {
+    position: fixed;
+
+    border-radius: 50%;
+
+    z-index: -1;
+}
+
+
+/* warna pink */
+
+.satu {
+    width: 300px;
+    height: 300px;
+
+    background-color: #ffb6d5;
+
+    top: -100px;
+    left: -80px;
+}
+
+
+/* warna biru */
+
+.dua {
+    width: 350px;
+    height: 350px;
+
+    background-color: #a8d8ff;
+
+    right: -120px;
+    top: 150px;
+}
+
+
+/* warna hijau */
+
+.tiga {
+    width: 300px;
+    height: 300px;
+
+    background-color: #b8f2c8;
+
+    left: -100px;
+    bottom: -100px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+
+    max-width: 450px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.90);
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.foto {
+    width: 130px;
+
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================
+   NAMA
+========================= */
+
+h1 {
+    margin-bottom: 5px;
+
+    color: #8e5aa8;
+
+    font-size: 32px;
+}
+
+
+.deskripsi {
+    color: #777;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   TENTANG
+========================= */
+
+.tentang {
+    background-color: #fff0f7;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    border-radius: 20px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    margin-top: 20px;
+}
+
+
+.tombol {
+    display: block;
+
+    padding: 15px;
+
+    margin: 12px 0;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.tombol:hover {
+    transform: translateY(-3px);
+
+    opacity: 0.85;
+}
+
+
+/* PINK */
+
+.pink {
+    background-color: #ff8fab;
+}
+
+
+/* UNGU */
+
+.ungu {
+    background-color: #a78bfa;
+}
+
+
+/* BIRU */
+
+.biru {
+    background-color: #60bdf5;
+}
+
+
+/* KUNING */
+
+.kuning {
+    background-color: #f4c95d;
+}
+
+
+/* =========================
+   SOSIAL MEDIA
+========================= */
+
+h2 {
+    margin-top: 30px;
+
+    color: #8e5aa8;
+
+    font-size: 20px;
+}
+
+
+.sosmed {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+.sosmed a {
+    text-decoration: none;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* INSTAGRAM */
+
+.instagram {
+    background-color: #e6689b;
+}
+
+
+/* TIKTOK */
+
+.tiktok {
+    background-color: #222;
+}
+
+
+/* YOUTUBE */
+
+.youtube {
+    background-color: #ff5555;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    margin-top: 25px;
+
+    color: #999;
+
+    font-size: 12px;
+}
