@@ -1,7 +1,3 @@
-/* =========================
-   DASAR
-========================= */
-
 * {
     box-sizing: border-box;
 }
@@ -12,9 +8,11 @@ body {
 
     font-family: Arial, sans-serif;
 
-    min-height: 100vh;
-
     background-color: #fff4d6;
+
+    color: #555;
+
+    min-height: 100vh;
 
     position: relative;
 
@@ -22,9 +20,7 @@ body {
 }
 
 
-/* =========================
-   BACKGROUND WARNA-WARNI
-========================= */
+/* BACKGROUND */
 
 .lingkaran {
     position: fixed;
@@ -34,9 +30,6 @@ body {
     z-index: -1;
 }
 
-
-/* warna pink */
-
 .satu {
     width: 300px;
     height: 300px;
@@ -44,11 +37,8 @@ body {
     background-color: #ffb6d5;
 
     top: -100px;
-    left: -80px;
+    left: -100px;
 }
-
-
-/* warna biru */
 
 .dua {
     width: 350px;
@@ -56,12 +46,9 @@ body {
 
     background-color: #a8d8ff;
 
-    right: -120px;
-    top: 150px;
+    right: -150px;
+    top: 200px;
 }
-
-
-/* warna hijau */
 
 .tiga {
     width: 300px;
@@ -69,42 +56,39 @@ body {
 
     background-color: #b8f2c8;
 
-    left: -100px;
+    left: -120px;
     bottom: -100px;
 }
 
 
-/* =========================
-   CONTAINER
-========================= */
+/* CONTAINER */
 
 .container {
     width: 90%;
 
-    max-width: 450px;
+    max-width: 800px;
 
     margin: 40px auto;
 
-    padding: 30px;
-
     text-align: center;
-
-    background-color: rgba(255, 255, 255, 0.90);
-
-    border-radius: 30px;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 
-/* =========================
-   FOTO
-========================= */
+/* PROFIL */
+
+.profil {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 20px #d8c5cc;
+}
 
 .foto {
-    width: 130px;
-
-    height: 130px;
+    width: 140px;
+    height: 140px;
 
     object-fit: cover;
 
@@ -112,186 +96,257 @@ body {
 
     border: 6px solid white;
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 5px 15px #cdb4bd;
 }
 
-
-/* =========================
-   NAMA
-========================= */
-
-h1 {
-    margin-bottom: 5px;
-
+.profil h1 {
     color: #8e5aa8;
 
-    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.profil p {
+    color: #888;
 }
 
 
-.deskripsi {
-    color: #777;
+/* BOX */
 
-    margin-top: 5px;
+.box {
+    background-color: white;
 
-    font-size: 14px;
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 20px #d8c5cc;
+}
+
+.box h2 {
+    color: #8e5aa8;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
 }
 
 
-/* =========================
-   TENTANG
-========================= */
+/* FORM */
 
-.tentang {
-    background-color: #fff0f7;
+form {
+    text-align: left;
+}
 
-    padding: 15px;
+label {
+    display: block;
 
-    margin-top: 20px;
+    margin-top: 15px;
 
-    border-radius: 20px;
+    margin-bottom: 6px;
+
+    font-weight: bold;
 
     color: #666;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #f0c9d7;
+
+    border-radius: 10px;
 
     font-size: 14px;
+
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e88ca5;
+}
+
+textarea {
+    height: 90px;
+
+    resize: vertical;
+}
+
+
+/* BUTTON */
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: #e88ca5;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d96f8c;
+}
+
+
+/* HASIL BIODATA */
+
+.hasil-data {
+    background-color: #fff0f6;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: left;
+}
+
+.hasil-data p {
+    margin: 10px 0;
 
     line-height: 1.5;
 }
 
-
-/* =========================
-   MENU
-========================= */
-
-.menu {
-    margin-top: 20px;
+.kosong {
+    color: #999;
 }
 
 
-.tombol {
-    display: block;
+/* TABLE */
 
-    padding: 15px;
+.table-container {
+    width: 100%;
 
-    margin: 12px 0;
+    overflow-x: auto;
+}
 
-    text-decoration: none;
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 13px;
+}
+
+th {
+    background-color: #e88ca5;
 
     color: white;
 
-    font-weight: bold;
+    padding: 12px;
+}
 
-    border-radius: 15px;
+td {
+    padding: 10px;
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    border: 1px solid #f0c9d7;
 
-    transition: 0.3s;
+    background-color: #fffafd;
+}
+
+tr:nth-child(even) td {
+    background-color: #fff0f6;
 }
 
 
-.tombol:hover {
-    transform: translateY(-3px);
-
-    opacity: 0.85;
-}
-
-
-/* PINK */
-
-.pink {
-    background-color: #ff8fab;
-}
-
-
-/* UNGU */
-
-.ungu {
-    background-color: #a78bfa;
-}
-
-
-/* BIRU */
-
-.biru {
-    background-color: #60bdf5;
-}
-
-
-/* KUNING */
-
-.kuning {
-    background-color: #f4c95d;
-}
-
-
-/* =========================
-   SOSIAL MEDIA
-========================= */
-
-h2 {
-    margin-top: 30px;
-
-    color: #8e5aa8;
-
-    font-size: 20px;
-}
-
+/* SOSIAL MEDIA */
 
 .sosmed {
     display: flex;
 
     justify-content: center;
 
-    gap: 10px;
+    gap: 12px;
 
     flex-wrap: wrap;
 }
-
 
 .sosmed a {
     text-decoration: none;
 
     color: white;
 
-    padding: 10px 15px;
+    padding: 12px 20px;
 
     border-radius: 20px;
 
-    font-size: 13px;
-
     font-weight: bold;
 }
-
-
-/* INSTAGRAM */
 
 .instagram {
     background-color: #e6689b;
 }
 
-
-/* TIKTOK */
-
 .tiktok {
-    background-color: #222;
+    background-color: #222222;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.sosmed a:hover {
+    opacity: 0.8;
 }
 
 
-/* YOUTUBE */
-
-.youtube {
-    background-color: #ff5555;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 .footer {
-    margin-top: 25px;
+    margin: 25px 0;
 
-    color: #999;
+    color: #8e5aa8;
 
-    font-size: 12px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .box {
+        padding: 18px;
+    }
+
+    .profil {
+        padding: 20px;
+    }
+
+    .foto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profil h1 {
+        font-size: 26px;
+    }
+
+    table {
+        font-size: 12px;
+    }
 }

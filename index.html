@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Colorful Microsite</title>
+    <title>Microsite Biodata</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,78 +17,205 @@
     <div class="lingkaran tiga"></div>
 
 
-    <!-- KARTU UTAMA -->
+    <!-- CONTAINER UTAMA -->
     <div class="container">
 
-        <!-- FOTO -->
-        <img src="foto.jpg" alt="Foto Profil" class="foto">
+        <!-- PROFIL -->
+        <div class="profil">
 
+            <img src="foto.jpg" alt="Foto Profil" class="foto">
 
-        <!-- NAMA -->
-        <h1>Nesha 🌷</h1>
-
-        <p class="deskripsi">
-            Pelajar | Creative Girl | Digital Enthusiast
-        </p>
-
-
-        <!-- TENTANG -->
-        <div class="tentang">
-            <p>
-                ✨ Welcome to my little space ✨
-            </p>
+            <h1>Nesha 🌷</h1>
 
             <p>
-                Hai! Ini adalah microsite pribadiku.
-                Yuk kenal lebih dekat denganku! 💕
+                My Colorful Biodata Website ✨
             </p>
+
         </div>
 
 
-        <!-- MENU -->
-        <div class="menu">
+        <!-- FORM BIODATA -->
+        <div class="box">
 
-            <a href="#" class="tombol pink">
-                🌸 Tentang Saya
-            </a>
+            <h2>📝 Form Biodata</h2>
 
-            <a href="#" class="tombol ungu">
-                🎨 My Portfolio
-            </a>
+            <form id="biodataForm">
 
-            <a href="#" class="tombol biru">
-                💻 My Project
-            </a>
+                <label>Nama Lengkap</label>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama"
+                    required
+                >
 
-            <a href="#" class="tombol kuning">
-                📸 Galeri Foto
-            </a>
+
+                <label>NIS</label>
+                <input
+                    type="text"
+                    id="nis"
+                    placeholder="Masukkan NIS"
+                    required
+                >
+
+
+                <label>Kelas</label>
+                <input
+                    type="text"
+                    id="kelas"
+                    placeholder="Contoh: X RPL 1"
+                    required
+                >
+
+
+                <label>Tempat Lahir</label>
+                <input
+                    type="text"
+                    id="tempat"
+                    placeholder="Masukkan tempat lahir"
+                    required
+                >
+
+
+                <label>Tanggal Lahir</label>
+                <input
+                    type="date"
+                    id="tanggal"
+                    required
+                >
+
+
+                <label>Jenis Kelamin</label>
+
+                <select id="jenisKelamin" required>
+
+                    <option value="">
+                        -- Pilih Jenis Kelamin --
+                    </option>
+
+                    <option value="Laki-laki">
+                        Laki-laki
+                    </option>
+
+                    <option value="Perempuan">
+                        Perempuan
+                    </option>
+
+                </select>
+
+
+                <label>Alamat</label>
+
+                <textarea
+                    id="alamat"
+                    placeholder="Masukkan alamat"
+                    required
+                ></textarea>
+
+
+                <label>No. HP</label>
+
+                <input
+                    type="text"
+                    id="hp"
+                    placeholder="Masukkan nomor HP"
+                    required
+                >
+
+
+                <button type="submit">
+                    💾 Simpan Biodata
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- HASIL BIODATA -->
+        <div class="box hasil">
+
+            <h2>💌 Hasil Biodata</h2>
+
+            <div id="hasilBiodata">
+
+                <p class="kosong">
+                    Biodata belum diisi.
+                    Silakan isi form terlebih dahulu 😊
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TABEL BIODATA -->
+        <div class="box">
+
+            <h2>📊 Tabel Biodata</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>NIS</th>
+                            <th>Kelas</th>
+                            <th>Tempat Lahir</th>
+                            <th>Tanggal Lahir</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Alamat</th>
+                            <th>No. HP</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tabelBiodata">
+
+                    </tbody>
+
+                </table>
+
+            </div>
 
         </div>
 
 
         <!-- SOSIAL MEDIA -->
-        <h2>💌 Temukan Aku</h2>
+        <div class="box">
 
-        <div class="sosmed">
+            <h2>💌 Sosial Media</h2>
 
-            <a href="https://instagram.com/"
-               target="_blank"
-               class="instagram">
-                Instagram
-            </a>
+            <div class="sosmed">
 
-            <a href="https://tiktok.com/"
-               target="_blank"
-               class="tiktok">
-                TikTok
-            </a>
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="instagram">
+                    📷 Instagram
+                </a>
 
-            <a href="https://youtube.com/"
-               target="_blank"
-               class="youtube">
-                YouTube
-            </a>
+
+                <a
+                    href="https://www.tiktok.com/"
+                    target="_blank"
+                    class="tiktok">
+                    🎵 TikTok
+                </a>
+
+
+                <a
+                    href="https://wa.me/6281217420464"
+                    target="_blank"
+                    class="whatsapp">
+                    💬 WhatsApp
+                </a>
+
+            </div>
 
         </div>
 
@@ -99,6 +226,10 @@
         </p>
 
     </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 </html>
