@@ -1,138 +1,235 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Colorful Microsite</title>
+
+    <title>Microsite Biodata</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="hero">
-        <div class="hero-card">
-            <div class="sticker">✦ HELLO, NICE TO MEET YOU ✦</div>
+    <!-- BACKGROUND -->
+    <div class="lingkaran satu"></div>
+    <div class="lingkaran dua"></div>
+    <div class="lingkaran tiga"></div>
 
-            <img src="foto.jpg" alt="Foto profil Nesha" class="foto">
 
-            <h1>Halo, aku Nesha! 🌷</h1>
-            <p class="subtitle">My Little Colorful World</p>
-            <p class="intro">
-                Tempat kecil untuk berbagi cerita, biodata,
-                dan hal-hal menarik tentang diriku. 💖
+    <!-- CONTAINER UTAMA -->
+    <div class="container">
+
+        <!-- PROFIL -->
+        <div class="profil">
+
+            <img src="foto.jpg" alt="Foto Profil" class="foto">
+
+            <h1>Nesha 🌷</h1>
+
+            <p>
+                My Colorful Biodata Website ✨
             </p>
 
-            <div class="social-links">
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social instagram">Instagram ↗</a>
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social tiktok">TikTok ↗</a>
-                <a href="https://wa.me/6281217420464" target="_blank" rel="noopener noreferrer" class="social whatsapp">WhatsApp ↗</a>
-            </div>
         </div>
-    </header>
 
-    <main class="content">
 
-        <section class="panel">
-            <div class="section-label">01 / ABOUT ME</div>
-            <h2>🦋 Form Biodata</h2>
-            <p class="section-desc">Isi data di bawah ini, lalu tekan tombol simpan.</p>
+        <!-- FORM BIODATA -->
+        <div class="box">
+
+            <h2>📝 Form Biodata</h2>
 
             <form id="biodataForm">
-                <div class="form-grid">
-                    <div class="field">
-                        <label for="nama">Nama lengkap</label>
-                        <input type="text" id="nama" placeholder="Nama kamu" required>
-                    </div>
 
-                    <div class="field">
-                        <label for="nis">NIS</label>
-                        <input type="text" id="nis" placeholder="Nomor induk siswa" required>
-                    </div>
+                <label>Nama Lengkap</label>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama"
+                    required
+                >
 
-                    <div class="field">
-                        <label for="kelas">Kelas</label>
-                        <input type="text" id="kelas" placeholder="Contoh: X RPL 1" required>
-                    </div>
 
-                    <div class="field">
-                        <label for="jk">Jenis kelamin</label>
-                        <select id="jk" required>
-                            <option value="">Pilih jenis kelamin</option>
-                            <option value="Perempuan">Perempuan</option>
-                            <option value="Laki-laki">Laki-laki</option>
-                        </select>
-                    </div>
+                <label>NIS</label>
+                <input
+                    type="text"
+                    id="nis"
+                    placeholder="Masukkan NIS"
+                    required
+                >
 
-                    <div class="field">
-                        <label for="tempat">Tempat lahir</label>
-                        <input type="text" id="tempat" placeholder="Kota kelahiran" required>
-                    </div>
 
-                    <div class="field">
-                        <label for="tanggal">Tanggal lahir</label>
-                        <input type="date" id="tanggal" required>
-                    </div>
+                <label>Kelas</label>
+                <input
+                    type="text"
+                    id="kelas"
+                    placeholder="Contoh: X RPL 1"
+                    required
+                >
 
-                    <div class="field full">
-                        <label for="alamat">Alamat</label>
-                        <textarea id="alamat" rows="3" placeholder="Alamat tempat tinggal" required></textarea>
-                    </div>
 
-                    <div class="field full">
-                        <label for="hp">Nomor HP</label>
-                        <input type="tel" id="hp" placeholder="Nomor telepon" required>
-                    </div>
-                </div>
+                <label>Tempat Lahir</label>
+                <input
+                    type="text"
+                    id="tempat"
+                    placeholder="Masukkan tempat lahir"
+                    required
+                >
 
-                <button type="submit" class="save-button">💖 Simpan Biodata</button>
-                <button type="reset" class="reset-button">Kosongkan Form</button>
+
+                <label>Tanggal Lahir</label>
+                <input
+                    type="date"
+                    id="tanggal"
+                    required
+                >
+
+
+                <label>Jenis Kelamin</label>
+
+                <select id="jenisKelamin" required>
+
+                    <option value="">
+                        -- Pilih Jenis Kelamin --
+                    </option>
+
+                    <option value="Laki-laki">
+                        Laki-laki
+                    </option>
+
+                    <option value="Perempuan">
+                        Perempuan
+                    </option>
+
+                </select>
+
+
+                <label>Alamat</label>
+
+                <textarea
+                    id="alamat"
+                    placeholder="Masukkan alamat"
+                    required
+                ></textarea>
+
+
+                <label>No. HP</label>
+
+                <input
+                    type="text"
+                    id="hp"
+                    placeholder="Masukkan nomor HP"
+                    required
+                >
+
+
+                <button type="submit">
+                    💾 Simpan Biodata
+                </button>
+
             </form>
-        </section>
 
-        <section class="panel">
-            <div class="section-label">02 / YOUR PROFILE</div>
+        </div>
+
+
+        <!-- HASIL BIODATA -->
+        <div class="box hasil">
+
             <h2>💌 Hasil Biodata</h2>
-            <div id="hasilBiodata" class="result-empty">
-                Biodata kamu akan muncul di sini setelah disimpan. ✨
+
+            <div id="hasilBiodata">
+
+                <p class="kosong">
+                    Biodata belum diisi.
+                    Silakan isi form terlebih dahulu 😊
+                </p>
+
             </div>
-        </section>
 
-        <section class="panel">
-            <div class="section-label">03 / DATA COLLECTION</div>
-            <h2>📚 Tabel Biodata</h2>
-            <p class="section-desc">Data yang disimpan akan masuk ke tabel ini.</p>
+        </div>
 
-            <div class="table-wrap">
+
+        <!-- TABEL BIODATA -->
+        <div class="box">
+
+            <h2>📊 Tabel Biodata</h2>
+
+            <div class="table-container">
+
                 <table>
+
                     <thead>
+
                         <tr>
-                            <th>No.</th>
+                            <th>No</th>
                             <th>Nama</th>
                             <th>NIS</th>
                             <th>Kelas</th>
-                            <th>Jenis Kelamin</th>
                             <th>Tempat Lahir</th>
                             <th>Tanggal Lahir</th>
+                            <th>Jenis Kelamin</th>
                             <th>Alamat</th>
                             <th>No. HP</th>
                         </tr>
+
                     </thead>
+
                     <tbody id="tabelBiodata">
-                        <tr id="barisKosong">
-                            <td colspan="9">Belum ada data biodata 🌼</td>
-                        </tr>
+
                     </tbody>
+
                 </table>
+
             </div>
-        </section>
 
-    </main>
+        </div>
 
-    <footer>
-        <p>Made with 💗 by Nesha</p>
-        <p class="footer-small">Be colorful. Be kind. Be yourself. ✨</p>
-    </footer>
 
+        <!-- SOSIAL MEDIA -->
+        <div class="box">
+
+            <h2>💌 Sosial Media</h2>
+
+            <div class="sosmed">
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="instagram">
+                    📷 Instagram
+                </a>
+
+
+                <a
+                    href="https://www.tiktok.com/"
+                    target="_blank"
+                    class="tiktok">
+                    🎵 TikTok
+                </a>
+
+
+                <a
+                    href="https://wa.me/6281217420464"
+                    target="_blank"
+                    class="whatsapp">
+                    💬 WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <p class="footer">
+            Made with 💗 by Nesha
+        </p>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
+
 </body>
 </html>
